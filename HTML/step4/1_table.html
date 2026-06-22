@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table Tag - 표 전용 태그</title>
+</head>
+<body>
+    <table>
+        <caption>month / savings Table</caption>
+        <colgroup>
+            <col style="background-color: lightpink; width: 150px;">
+            <col style="background-color: yellow; width: 150px;">
+        </colgroup>
+        <!--colgroup = 열을 묶어서 스타일(css)지정 할 때 사용한다 > selector로 대체가 가능 -->
+        <thead>
+            <tr>
+                <th>Month</th>
+                <!-- th tableHeading = 분류명 / cell(칸) = 열(column)과 동일 -->
+                <th>Saving</th>
+            </tr>
+        </thead>
+        <!-- thead = 테이블의 상단부(행) / 데이터의 분류 형식이 상단 분류일 경우 선택적 사용 -->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <!-- td TableDate = 데이터 / cell(칸) = 열과 동일 -->
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Sum</th>
+                <!-- th tableHeading = 분류명 -->
+                <td>$180</td>
+            </tr>
+            <!-- tr tableRow = 행 -->
+        </tfoot>
+        <!-- tfoot = 테이블의 하단부(행) / 데이터의 결산 형식이 필요할 경우 선택적 사용 -->
+        <!-- tbody = 테이블의 실질적 데이터를 담당하는 부분 / 필수 사용 -->
+    </table>
+    
+</body>
+</html>
+
+
+<!-- 질문 : tfoot는 보통 결산이니까 아까 헤드밑에 오는게 맞다 이렇게 했는데 코드상으로는 바꿔도 상관 없는건가? 그냥 코드를 보기 쉽게 하기 위해 바꾼걸까? 위에서부터 쭉 보는거라고 했는데 이 태그의 순서는 바꿔도 어떻게 바뀌지 않는걸까? 생각해보면 결산은 맨밑에 오는게 맞긴함... 머지!!!!!!!!! -->
