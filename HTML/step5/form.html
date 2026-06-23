@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - Input Tag's. 입력관련태그</title>
+</head>
+<body>
+    <form action="">
+        <!-- 
+            form은 input내 data들을 담아 전송하는 역할을 수행한다.
+            감싸지는 위치에 따라 input과 그외 나머지 정보들을 서버로 보낼 수 있다.
+            전송방식에는 get/post 방식이 있다.
+        -->
+        <fieldset>
+            <legend>HTML4 Input's</legend>
+            <ul>
+                <li>
+                    <label for="cliID">사용자 아이디 :</label>
+                    <input type="text" id="cliID">
+                    <!-- 
+                    Input - display : inline-block
+                    id는 backEnd가 직접적으로 사용하는 속성이기 때문에 상호 협의하에 작성하거나 상식적인 선 내 web 상 naming 규칙을 따름
+                        1. 한글, 띄어쓰기, 특문금지
+                        2. 숫자나 대문자가 앞에 오면 안됨
+                        3. 영문키워드 2개 이상을 조합히야함 (모든 언어에는 예약어 개념이 존재 = 이미 선점된 단어들)
+                    만약 lable사용이 불가능 할 시에 title을 항시 제공해야 한다.
+                    -->
+
+                    <!-- type: text - 모든 문자를 다 담을수 있음 -->
+                </li>
+                <li>
+                    <label for="cliPW">사용자 비밀번호 :</label>
+                    <input type="password" id="cliPW">
+                </li>
+                <li>
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                    <label for="btn_radio1">radio1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">radio2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">radio3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">radio4</label>
+
+                    <!-- or컨디션 (이거나 조건) -->
+                </li>
+                <p>
+                    <strong>(input:radio#btn_radio$[name='radioGroup']+label[for='btn_radio$]{radio$})*4</strong>
+                </p>
+                <li>
+                    <input type="checkbox" id="btn_chk1">
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+                <p>
+                    <strong>(input:checkbox#btn_chk$+label[for='btn_chk$']{check$})*4</strong>
+                </p>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input's</legend>
+        </fieldset>
+    </form>
+</body>
+</html>
