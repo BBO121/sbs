@@ -42,8 +42,13 @@
                     <label for="btn_radio3">radio3</label>
                     <input type="radio" name="radioGroup" id="btn_radio4">
                     <label for="btn_radio4">radio4</label>
-
-                    <!-- or컨디션 (이거나 조건) -->
+                    <!--
+                        입력 태그 타입 radio는 라디오 버튼이며, name 을 같은 이름으로 여러 항목을 지정시 그룹화 된다. 또한 label을 이용하여 해당 항목과 버튼을 연결해줄 필요가 있다.
+                        value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.
+                        checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다.
+                        그리고 cheackbox와는 달리 하나의 항목만 선택 가능하다.
+                    -->
+                        <!-- or컨디션 (이거나 조건) -->
                 </li>
                 <p>
                     <strong>(input:radio#btn_radio$[name='radioGroup']+label[for='btn_radio$]{radio$})*4</strong>
@@ -57,15 +62,99 @@
                     <label for="btn_chk3">check3</label>
                     <input type="checkbox" id="btn_chk4">
                     <label for="btn_chk4">check4</label>
+                    <!--
+                        1. 입력태그타입 checkbox는 다중 선택을 지원 하는 input이며, label을 이용하여 해당 항목과 연결해야 한다.
+                        2. value 값은 기존 input 과 동일
+                        3. checked 옵션 역시 radio input 과 동일
+                    -->
                 </li>
                 <p>
                     <strong>(input:checkbox#btn_chk$+label[for='btn_chk$']{check$})*4</strong>
                 </p>
+                <li>
+                    <textarea title="하시고 싶은 말씀을 남겨주세요" cols="30" rows="10"></textarea>
+                </li>
+                <!-- 만약 lable사용이 불가능 할 시에 title을 항시 제공해야 한다. >>> title이 붙으면 사이트가 읽어줌. -->
+                <!-- 
+                    1.cols,rows attr은 css에서 사용해야함 (삭제하라는 뜻)
+                    2.Tqg 입력불가 - 입력시 다양성 표현 불가
+                    3. resize기능은 css에서 꺼야함
+                    4. font역시 직접 지정해야만 변경됨
+                -->
+                <!-- 
+                    여러줄을 입력 할 수 있는 텍스트 상자인 textarea는 cols로 가로 입력 너비, rows로 세로입력너비의 초기값을 설정할 수 있다.
+                    주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에, 초기 데이터 삽입시 공백부분에 유의해야한다.
+                -->
+                <li>
+                    <label for="selectjob">직업 선택 :</label>
+                    <select id="selectjob">
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                <!-- 
+                    select는 선택항목의 목록형 단축 메뉴 형식으로 만드는 입력 양식
+                    항목 수 만큼의 option이 필요하고, 이 안의 value로 값을 전달한다.
+                    optgroup으로 중간 그룹을 설정 할 수 있다.
+                    radio, checkbox처럼 외형 변경이 어렵다.
+                -->
+                </li>
+                <li>
+                    <input type="image" src="https://placehold.co/150x50?text=button" alt="imgButton">
+                        <!-- 1. image 는 버튼을 웹사이트 디자인에 맞게 디자인된 버튼을 사용할 때 사용 한다. -->
+                    <input type="button" value="비밀번호확인">
+                        <!-- 2. button 은 최종 확인 전송 및 페이지 양식 되돌리기, 파일 찾아보기 기능을 제외한 나머지 기능의 버튼 (우편번호, 검색, 추가, 삭제 등)에 사용한다. -->
+                    <input type="file">
+                        <!-- 3. file은 파일 찾아보기 버튼에 사용한다. -->
+                    <input type="submit" value="전송">
+                        <!-- 
+                            4. summit은 해당 폼 내 모든 input의 유효성을 검수하고 전송을 담당
+                            반드시 form 안에 위치해야함!!!!!
+                        -->
+                    <input type="reset" value="취소">
+                        <!-- 
+                            5. reset은 해당 폼의 모든 양식 내용을 초기화(아예 없는 상태) 시킬 때 사용한다.
+                            반드시 form 안에 위치해야함!!!!!
+                        -->
+                </li>
             </ul>
         </fieldset>
+    </form>
+
+    <form>
         <fieldset>
             <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <label for="userEmail">사용자 이메일 :</label>
+                    <input type="email" id="userEmail" required readonly>
+                    <!-- 
+                        type 을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @버튼이 생긴다. placeholder (ie10이하 지원불가)
+                    -->
+                </li>
+                <li>
+                    <label for="UserURL">웹사이트 :</label>
+                    <input type="url" id="UserURL" required>
+                    <!-- 
+                        type 을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 떄, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고 있으면 타 도메인으로 변경 가능
+                    -->
+                </li>
+                <!-- 
+                live server 다른장치 연결 방법
+
+                1. 작업하는 컴퓨터와 확인하려는 장치가 같은 wifi에 접속되어 있어야 함.
+                2. 컴퓨터에서 윈도우+R > cmd > ipconfig /all > ipv4 주소 > 크롬 접속 > ip주소:포트번호
+                -->
+            </ul>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
         </fieldset>
     </form>
+
 </body>
 </html>
