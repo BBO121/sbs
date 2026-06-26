@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step1 - h태그와 p태그</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        html,body{
+            margin: 0; height: 100%; scroll-behavior: smooth;
+        }
+        ul#menu{
+            position: fixed; right: 0; top: 0; background-color: white;
+        }
+        div{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+     <ul id="menu">
+        <li><a href="../index.html">돌아가기</a></li>
+        <li><a href="#heading">heading</a></li>
+        <li><a href="#Paragraph">Paragraph</a></li>
+    </ul>
+
+    <div id="heading">
+        <h1>h태그에 대해 알아보자!</h1>
+        <h1>&lt;h1&gt; :: heading - 1</h1>
+            <ul>
+                <li>제일 크고 제일 중요함.</li>
+                <li>ci, bi, logo 등에 사용
+                    <ul>
+                        <li>bi : Brand Identity</li>
+                    </ul>
+                </li>
+            </ul>
+        <h2>&lt;h2&gt; :: heading - 2</h2>
+            <ul>
+                <li>페이지 자체의 제목 (각 섹션별 제목)</li>
+                <li>body안에서 열리는 가장 큰 공간단위</li>
+            </ul>
+        <h3>&lt;h3&gt; :: heading - 3</h3>
+            <ul>
+                <li>h2의 박스 단위의 제목</li>
+            </ul>
+        <h4>&lt;h4&gt; :: heading - 4</h4>
+            <ul>
+                <li>h3의 박스 단위의 제목</li>
+            </ul>
+        <h5>&lt;h5&gt; :: heading - 5</h5>
+            <ul>
+                <li>거의 쓸일이 없다....</li>
+            </ul>
+        <h6>&lt;h6&gt; :: heading - 6</h6>
+            <ul>
+                <li>내가 얘 까지 쓰고있다면 코드를 그지같이 치고 있지 않은지 고민해보자....</li>
+            </ul>
+    </div>
+
+
+    <div id="Paragraph">
+        <h1>p태그에 대해 알아보자!</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <th>&lt;b&gt;</th>
+                    <td><b>[bold 진하게]</b><br>접근성 문제가 해결이 안되어서 잘 안씀<br>스크린리더에서 맨앞의 글자에 강조를 함</td>
+                    <th>&lt;strong&gt;</th>
+                    <td><strong>[strong 진하게]</strong><br>청각적 효과가 있음</td>
+                </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                 <tr>
+                    <th>&lt;i&gt;</th>
+                    <td><i>[i 기울기]</i><br>외국어, 전문기술용어, 손글씨 등<br>분류적인 성격을 띄는 단어나 문장, 앞뒤 문맥과 구분되는 텍스트</td>
+                    <th>&lt;em&gt;</th>
+                    <td><em>[em 기울기]</em><br>청각적 효과가 있음<br>스크린리더에서 성조를 바꿈</td>
+                </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                <tr>
+                    <th>&lt;mark&gt;</th>
+                    <td><mark>[mark 색상강조]</mark><br>시각적 강조만 담당하고 청각적 강조는 없음<br>그래서 중요도가 너무 높은곳에 쓰면 안됨 (예: 글씨색 배경색 등) > 접근성때문에</td>
+                    <th></th>
+                    <td></td>
+                </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                <tr>
+                    <th>&lt;sup&gt;</th>
+                    <td><sup>[위]</sup>첨자<br>superScript, 일반적인 사용이 없고 대부분 화학 수학 물리학 식등에서 사용<br>즉 빈도수가 낮다</td>
+                    <th>&lt;sub&gt;</th>
+                    <td><sub>[아래]</sub>첨자<br>subScript, sup와 동일</td>
+                </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                <tr>
+                    <th>&lt;s&gt;</th>
+                    <td><s>[s 취소선]</s><br>실제 취소나 삭제를 의미하지는 않음</td>
+                    <th>&lt;del&gt;</th>
+                    <td><del>[delete 취소선]</del>(실제 data상 삭제)<br>실제 취소, 삭제를 의미함<br>쇼핑몰에서 할인되기 전 금액 같은거 표현할 때 사용</td>
+                </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                <tr>
+                    <th>&lt;u&gt;</th>
+                    <td><u>밑줄</u><br>사람은 강조라고 느낄수있지만 html상에서는 단순히 밑줄일뿐 중요하다는 의미는 없다<br>주관적 기준에서는 강조지만, 객관적 기준에서는 강조가 아닌것</td>
+                    <th></th>
+                    <td></td>
+                </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+                <tr>
+                    <th>&lt;big&gt;</th>
+                    <td>[&lt;big&gt;일부를 크게&lt;big&gt;표현해]<br>사용할 수 없는 태그<br>사용 빈도수가 적거나 심각한 오류를 야기하는 태그는 사라질 수 있다</td>
+                    <th>&lt;small&gt;</th>
+                    <td>[<small>일부를 작게</small> 표현해]<br>같은 공간 내에서 일부를 작게 표현해야 할 때</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <ul>
+            <li><strong>&lt;hr&gt;</strong> : horizontal Rule / 단순한 수평선이 아니라 선을 기준으로 위, 아래 주제 자체가 바뀐다는 뜻</li>
+            <li><strong>&lt;blockquote&gt;</strong> : block 상태 인용부</li>
+            <blockquote>이것이 block 상태의 인용부 입니다! <br>block 은 태어나자마자 너비를 100으로 가집니다!</blockquote>
+            <li><strong>&lt;q&gt;</strong> : inline 의 인용문</li>
+            <q>이것이 q 인용문입니다! " " 이 따옴표를 따로 쓰지 않아도 알아서 써진답니다!!</q>
+        </ul>
+       
+        <fieldset>
+            <legend><em>block 과 inline 이란?</em></legend>
+            <h4>display : block; (위에서부터 떨어지는 태그들) > inline-block; > inline; (글자처럼 한줄로 쭉 있는) </h4>
+            <h3>[ block ]</h3>
+            <ul>
+                <li>태어나자마자 가로 너비 100%를 가진다</li>
+                <li>항상 새로운 줄에서 시작한다</li>
+                <li>블록 태그 안에는 블록, 인라인 태그 보두 들어갈 수 있다</li>
+                <li>대표태그 : div, h1~h6, p, ul, ol, li, tabel, blockquote</li>
+            </ul>
+            <h3>[ inline ]</h3>
+            <ul>
+                <li>내용(content)만큼만 너비를 가진다</li>
+                <li>줄바꿈이 일어나지 않는다</li>
+                <li>문장 안에서 사용된다</li>
+                <li>대표태그 : a, strong, em, b, i, q, sub</li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>기억하자!!</strong></legend>
+            <ol>
+                <li>기능태그 vs 마크업 태그</li>
+                <br>
+                    <ul>
+                        <strong>[ 기능 태그 (Void Element) ]</strong>
+                        <li>혼자 기능을 수행하는 태그</li>
+                        <li>닫는 태그가 없다!</li>
+                        <li>ex> br, hr, img, input... </li>
+                        <br>
+                        <strong>[ 마크업태그 (Markup)]</strong>
+                        <li>내용을 감싸서 구조와 의미를 만드는 태그</li>
+                        <li>시작 태그와 종료태그가 있고 내용을 감싼다!</li>
+                        <li>ex> h1, p, div</li>
+                    </ul>
+                <br>
+                <li>브라우저의 기본 글자 크기는 보통 <mark>16px</mark>이다!</li>
+                <br>
+                <li>외워보자 용어!</li>
+                <br>
+                    <ul>
+                        <li><strong>자간</strong> : 글자와 글자 사이</li>
+                        <li><strong>행간</strong> : 줄과 줄 사이</li>
+                        <li><strong>문단 간격</strong> : 문단과 문단 사이</li>
+                    </ul>
+                <br>
+                <li>더미데이터 사용법</li>
+                <br>
+                <ul>
+                    <li>lorem > tab</li>
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium possimus, incidunt adipisci molestiae vero corrupti tempora dignissimos deserunt laboriosam repellat nemo sapiente dolorum perspiciatis quisquam a voluptatibus natus, quo nesciunt quae nobis repellendus? Libero nulla quis sequi repellendus id velit praesentium reiciendis debitis dolores. Ducimus, necessitatibus et. Quis, modi optio.</blockquote>
+
+                </ul>
+            </ol>
+        </fieldset>
+    </div>
+
+
+</body>
+</html>
