@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formTODO</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>필수입력사항</legend>
+            <table>
+                <caption>사용자정보</caption>
+                <tbody>
+                    <tr>
+                        <th><label for="cliID">아이디</label></th>
+                        <td><input type="text" id="cliID"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cliPW">비밀번호</label></th>
+                        <td><input type="password" id="cliPW"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cliPW">비밀번호확인</label></th>
+                        <td><input type="password" id="cliPW"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="name">이름</label></th>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="emailID">이메일</label></th>
+                        <td>
+                            <input type="text" id="emailID">
+                            <label for="email">@</label>
+                            <select id="email">
+                                <option>naver</option>
+                                <option>daum</option>        
+                                <option>gmail</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>선택입력사항</legend>
+            <table>
+                <caption>부가정보</caption>
+                <tbody>
+                    <tr>
+                        <th><label for="address">주소</label></th>
+                        <td>
+                            <input type="text" id="address">
+                            <a href="https://map.naver.com/p/"><button>주소찾기</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="userPN">연락처</label></th>
+                        <td><input type="tel" id="userPN"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="gender1">성별</label></th>
+                        <td>
+                            <input type="radio" name="gendergroup" id="gender1" checked>
+                            <label for="gender1">남자</label>
+                            <input type="radio" name="gendergroup" id="gender2">
+                            <label for="gender2">여자</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="hobby1">취미</label></th>
+                        <td>
+                            <input type="checkbox" id="hobby1">
+                            <label for="hobby1">독서</label>
+                            <input type="checkbox" id="hobby2">
+                            <label for="hobby2">게임</label>
+                            <input type="checkbox" id="hobby3">
+                            <label for="hobby3">영화</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="typeDateTime">생년월일시</label></th>
+                        <td><input type="datetime-local" id="typeDateTime"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="typeColor">좋아하는 색상</label></th>
+                        <td><input type="color" id="typeColor"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="sizeSet">키</label></th>
+                        <td><input type="range" id="sizeSet" min="150" max="190" step="5" value="150"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="sns">SNS</label></th>
+                        <td><input type="text" id="sns"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="welcome">가입인사</label></th>
+                        <td><textarea title="가입인사를 남겨주세요." cols="30" rows="10"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
