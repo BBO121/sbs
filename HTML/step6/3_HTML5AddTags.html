@@ -19,7 +19,90 @@
     </figure>
 
     <progress value="20" max="100"></progress>
+    <!--
+        보통 max 100은 바꿀일은 없음
+
+        profress는 나타내고픈 진행 상황을 실시간으로 나타낼때 사용 값을 value로 설정하고 최대값을 max로 설정한다
+    -->
     <meter value="80" min="10" max="100" low="20" high="90"></meter>80%
-    
+    <!-- 
+        로우와 하이가 있다는것 > 위험을 감지할 수 있다는 개념 / 너무 낮아서 위험! 너무 높아서 위험! 이런게 가능 (전압이라던가...)
+        80% 는 /> 뒤에 써야함!
+
+        진행중을 progress가 담당한다면, meter는 현재 사용량이나 소모된량 등의 정지된 산출값에 적합하다.
+        value는 현재값, min은 최소값, max는 최대값, low는 낮다의 기준범위, high는 높다의 기준범위 optimum은 적당하다의 기준범위
+    -->
+    <ruby>
+        韓 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+
+    <address>
+        <span>인천광역시 부평구 부평동 194-23 SBS아카데미컴퓨터아트학원 부평</span>
+        <a href="https://www.incheon.sbsart.com">사이트바로가기</a>
+        <a href="tel:+82324270111">전화걸기</a>
+        <a href="mailto:privacy@loreadugroup.com">이메일보내기</a>
+        <a href="https://earth.google.com/web/search/%ec%9d%b8%ec%b2%9c%ea%b4%91%ec%97%ad%ec%8b%9c+%eb%b6%80%ed%8f%89%ea%b5%ac+%eb%b6%80%ed%8f%89%eb%8f%99+%ec%9d%b8%ec%b2%9c%ec%bb%b4%ed%93%a8%ed%84%b0%ed%95%99%ec%9b%90-SBS%ec%95%84%ec%b9%b4%eb%8d%b0%eb%af%b8%ec%bb%b4%ed%93%a8%ed%84%b0%ec%95%84%ed%8a%b8%ed%95%99%ec%9b%90/@37.49215605,126.72397655,19.74015497a,818.18242228d,35y,0h,0t,0r/data=CiwiJgokCS9O5bFJEUNAEecnG-cHdULAGWA5uDoYpFBAIbDf5twPHknAQgIIAToDCgEwQgIIAEoNCP___________wEQAA?hl=ko" target="_blank">지도보기</a>
+    </address>
+     <!--
+            ? address
+            * 실제 사용 주소뿐 아니라 url 등의 주소, 연락처 관련 정보들을 담는 전용 Tag. - 통상적으로는 footer Tag안에 들어가는 것이 일반적
+            * mapApi(naver map, kakao map, google map..)를 동작 시키기 위해 실제 사용주소에 a를 사용하기도 함.
+            -p.s- 마이크로포맷으로 작성되는 vcard 형식은 http://microformats.org/code/hcard/creator 에서 만들어서 사용하면 된다.
+        vcard란 전자명함을 뜻하며, 안드로이드 와 ios 에서 범용적으로 사용되는 연락처 방식이기도 하다.
+            -->
+
+    <details>
+        <summary>Copyright 1999-2026</summary>
+        <!-- 이하 무엇을(dispaly:block) 사용해도 상관없다. -->
+        <p>by Refens Data. All Rights Reserved.</p>
+    </details>
+    <!-- 
+        어떠한 키워드나 문장(summury)의 요약 및 요소들을 및에 넣어두고 everyTrigger(click,hover...)로 show/hide 기능이 작동하게 함.
+    -->
+
+     <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <form action="demo_keygen.asp" method="get">
+        <label for="">userName :</label> <input type="text" name="security" id="userName">
+        <!-- <label for="keygenType">Encryption :</label> <keygen name="security" id="keygenType">  >>> 이거는 오류나서 주석처리해둔거 -->
+        <input type="submit" value="confirm">
+    </form>
+    <!-- 
+    backend development 보안 주요사항
+    보안키 생성 및 공개키 제출시에 개인 키는 개인에 저장되고 공개키만 서버로 전송
+    -->
+
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome,...</p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is...
+            </p>
+        </article>
+    </main>
+    <!-- 
+        메인페이지 자체를 의미 / 단 한번의 사용을 권장.
+        최상위 구조(body 직계)에만 사용 가능 (div 같은걸로 감싼다거나 그러면 안됨)
+    -->
+
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0<input type="range" id="a" value="50" step="1" min="1" max="100">100
+        +
+        <input type="number" id="b" value="50" step="1">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!-- 
+        output : form에 지정된 스크립트 연산처리를 출력하는 전용태그
+    -->
+
 </body>
 </html>
