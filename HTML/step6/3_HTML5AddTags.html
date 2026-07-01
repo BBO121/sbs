@@ -88,7 +88,7 @@
             </p>
         </article>
     </main>
-    <!-- 
+    <!--
         메인페이지 자체를 의미 / 단 한번의 사용을 권장.
         최상위 구조(body 직계)에만 사용 가능 (div 같은걸로 감싼다거나 그러면 안됨)
     -->
@@ -102,6 +102,29 @@
     </form>
     <!-- 
         output : form에 지정된 스크립트 연산처리를 출력하는 전용태그
+    -->
+
+    <input type="search" list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="Chrome">CR</option>
+        <option value="FireFox">FF</option>
+    </datalist>
+    <!-- 
+        select 와 유사한 datalist. 입력요소에 대한 사전 목록을 넣어두는데 활용할 수 있고, 동시에 사용자가 입력필드에 해당 옵션 일부를 작성하면 일치되는 결과값 출력 (ex 자동완성기능)
+        사용 방법은 input 의 list attr에 id 명을 기재하고, datalist tag에는 id를 적어준다 (label for과 비슷함)
+    -->
+
+    <div style="margin: 200px 0;">
+        dialog Box
+        <dialog open>
+            this is an open dialog window
+        </dialog>
+    </div>
+    <!-- 
+        popup (dialog(일방적으로 메세지를 전달하는 팝업 (위험한건 아니고 일상적인 대화 어서오세요 고객님 이런거, 보통 닫기버튼밖에 제공을 안함 )), alert (경고. 위험등급이 있는 메세지, 확인이 있어야함), confirm(확정, 버튼이 두개가 제공 확인 취소), prompt(내가 메세지를 입력할 수 있는 팝업형태 ex 귀하의 생년월일을 입력하시오), toast(밑에 뜨는거)...>>> 전부 플로팅 팝업)
+        등의 팝업을 표시하는 전용 태그로 open attr로 출력을 제어할 수 있다.
+        chrome, opera가 안정적 지원.
     -->
 
 </body>
