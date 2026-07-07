@@ -144,6 +144,98 @@
         <a href="">WE ARE HIRING</a>
     </section>
     <!-- team Fin -->
+    <section class="workArea" id="works">
+        <h2>
+            OUR WORKS
+            <a href="https://dribbble.com/" target="_blank">See All Project in dribbble</a>
+        </h2>
+        <ul>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://placehold.co/270x200" alt="undefined"></a></li>
+        </ul>
+        <a href="#">LOAD MORE</a>
+    </section>
+    <!-- works Fin -->
+    <section id="peopleSay" class="talkArea">
+        <h2>quote's section</h2>
+        <!-- 잘못된 케이스 : 시안상 제목부가 없음 >> div로 가장 바깥쪽을 선언하는게 나음 -->
+        <p>
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+            <strong>JANE GALADRIEL</strong>
+            <span>CEO TENGKUREP</span>
+        </p>
+         <!-- blockquote가 맞긴한데 블록퀏은 폰트가 안바뀜.. 바꾸려면 따로 지정해줘야해서 귀찮아서 그냥 보통 p 씀 -->
+         <!-- 모든 슬라이드는 리스트 > 만약 엑스디나 시그마처럼 움직이면 ul li 써줘야함 -->
+        <div>
+            <a href="#">&lt;</a>
+            <ul>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li class="active"><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+            </ul>
+            <a href="#">&gt;</a>
+        </div>
+        <!-- li class="active" >> 활성화 -->
+    </section>
+    <!-- peopleSay Fin -->
+    <section id="contact" class="contactArea">
+        <h2>contacts US</h2>
+        <form>
+            <fieldset>
+                <legend>GIVE US A GOOD NEWS</legend>
+                <input type="text" placeholder="Name" title="userName">
+                <input type="email" placeholder="Email" title="userName">
+                <input type="text" placeholder="Subject" title="postSubjet">
+                <textarea placeholder="Your Message" title="insert ur message"></textarea>
+                <input type="submit" value="SUBMIT">
+            </fieldset>
+        </form>
+        <div>
+            <h3>OUR HAPPY CLIENT</h3>
+            <ul>
+                <li><a href="#"><img src="images/ban_01.png" alt="ZARA"></a></li>
+                <li><a href="#"><img src="images/ban_02.png" alt="Mango"></a></li>
+                <li><a href="#"><img src="images/ban_03.png" alt="Barneys_New_York"></a></li>
+                <li><a href="#"><img src="images/ban_04.png" alt="Gucci"></a></li>
+                <li><a href="#"><img src="images/ban_05.png" alt="Calvin klein"></a></li>
+                <li><a href="#"><img src="images/ban_06.png" alt="NIKE"></a></li>
+                <li><a href="#"><img src="images/ban_07.png" alt="Converse"></a></li>
+                <li><a href="#"><img src="images/ban_08.png" alt="Puma"></a></li>
+                <li><a href="#"><img src="images/ban_09.png" alt="Levi's"></a></li>
+                <li><a href="#"><img src="images/ban_10.png" alt="Billabong"></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- 
+        위 구조는 개별적으로 잘못된 부분이 없으나, 전체적으로 볼떄 잘못된 부분이 많은 케이스
+        1. 두 영역의 대표 제목이 없음에도 section을 사용했다는 점
+        2. form을 밖에 사용하고 fieldset을 사용하는 바람에 legend 전용 타이틀이 사용되고 이하에 있는 배너 공간에서는 h를 사용하면서 css의 통제력이 어려워졌다.
+
+        이하 주석 구조를 참고하기! 주석구조가 올바른 구조!!
+    -->
+
+    <!-- <div id="contact" class="contactArea">
+        <div>
+            <h3></h3>
+            이하 구조 동일
+        </div>
+        <div>
+            <h3></h3>
+            이하 구조 동일
+        </div>
+    </div> -->
 
 
 <!-- maind은 그냥 해보기
