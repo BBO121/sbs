@@ -33,5 +33,309 @@
         </div>
     </header>
     <!-- header FIn -->
+
+    <div class="categoryArea">
+        <nav>
+            <ul>
+                <li><a href="#topSales">Top Sales</a></li>
+                <li><a href="#brandFocus">Brand Focus</a></li>
+                <li class="active"><a href="#hiTech">Hi-tech</a></li>
+                <li><a href="#bestSellers">Best Sellers</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#">Support</a>
+            <label for="mui" class="material-icons">search</label>
+            <input type="search" placeholder="I’m looking for ..." title="Search the site">
+        </div>
+    </div>
+    <!-- 일단... 폰트 이런거 다 같으니까 class 지정해놔야할거같은데.. h없으니까 div 로 묶기 -->
+
+    <section id="slide" class="slideArea">
+        <div class="slide1Area" id="slide1">
+            <h2>iPhone 6 32Gb Black</h2>
+            <p>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
+            <a href="#">BUY NOW</a>
+        </div>
+        <!-- 앞으로 슬라이드 2 3 4 등을 넣을거니까 여기를 div 묶는게 맞지 않을까???? -->
+
+        <div>
+            <a href="#" hidden>&lt;</a>
+            <ul>
+                <li class="active"><a href="#slide1"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <a href="#">&gt;</a>
+        </div>
+        <!-- 그럼 얘는 유기적으로 작동을 해야하니까..? (인디케이터랑 컨트롤러가 같이 움직이니까 같이 div로 묶기?) -->
+    </section>
+    <!-- 배경을 깔아야하니까 배경을 깔 공간이 필요함. 그래서 마침 h2도 써야하니까 section 으로 넣기. -->
+
+    <form>
+        <fieldset>
+            <legend hidden>sort</legend>
+            <!-- 어쩌다보니 발견한 hidden.. 안배운건데.. 물어보기.... -->
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option>Best Match</option>
+                <option>ex-color</option>
+            </select>
+            <label for="Keywords">Keywords</label>
+            <input type="search" id="Keywords" placeholder="Tablet">
+            <!--
+            <label for="priceSetMin">Price</label>
+            <input type="number" id="priceSetMin" placeholder="10">
+            <label for="priceSetMax">-</label>
+            <input type="number" id="priceSetMax" placeholder="1000">
+            근데 number 는 무조건 수량에만 쓰라고 했었다!!!!!!!!!!! 
+            -->
+            <label for="priceSetMin">Price</label>
+            <input type="text" id="priceSetMin" placeholder="10">
+            <span>-</span>
+            <input type="text" id="priceSetMax" placeholder="1000">
+
+            <input type="checkbox" id="freeShipping" checked>
+            <label for="freeShipping">Free Shipping</label>
+
+            <label for="ship">Ship to:</label>
+            <select id="ship">
+                <option>USA</option>
+                <option>ex-KOR</option>
+            </select>
+        </fieldset>
+    </form>
+    <aside id="sideBar" class="sideArea">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#topSales">Top Sales</a>
+                    <label for="mui" class="material-icons">chevron_right</label>
+                </li>
+                <li>
+                    <a href="#brandFocus">Brand Focus</a>
+                    <label for="mui" class="material-icons">chevron_right</label>
+                </li>
+                <li class="active">
+                    <a href="#hiTech">Hi-Tech</a>
+                    <label for="mui" class="material-icons">keyboard_arrow_down</label>
+                    <ul class="sideActive1Area">
+                        <li>Cell Phones</li>
+                        <li>Cameras</li>
+                        <li>Computers</li>
+                        <li>Tv, Audio</li>
+                        <li>Video Games</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#home">Home</a>
+                    <label for="mui" class="material-icons">chevron_right</label>
+                </li>
+                <li>
+                    <a href="#sale">Sale</a>
+                    <label for="mui" class="material-icons">chevron_right</label>
+                </li>
+            </ul>
+            <!-- ??? 이게 맞나..? 내가 이해한거론.. 글로벌영역에 옆에 오는 메뉴 aside로 묶기 / 메뉴니까 nav 에 list (2중첩) 근데 안에 리스트는 또 폰트가 다르니까 따로 class 설정 -->
+        </nav>
+
+        <form>
+            <fieldset>
+                <legend>AVAILABLE</legend>
+                <input type="radio" name="availableGroup" id="availableStorage" checked>
+                <label for="availableStorage">In Storage</label>
+                <span>45</span>
+                <input type="radio" name="availableGroup" id="availableOnline">
+                <label for="availableOnline">In Online-Shop</label>
+                <span>12</span>
+            </fieldset>
+            <fieldset>
+                <legend>BLANDS<a href="#brandFocus">ALL</a></legend>
+                <input type="checkbox" name="blandsGroup" id="blandsApple" checked>
+                <label for="blandsApple">apple</label>
+                <span>32</span>
+                <input type="checkbox" name="blandsGroup" id="blandsJbl">
+                <label for="blandsJbl">JBL</label>
+                <span>14</span>
+                <input type="checkbox" name="blandsGroup" id="blandsBose">
+                <label for="blandsBose">Bose</label>
+                <span>3</span>
+                <input type="checkbox" name="blandsGroup" id="blandsNest">
+                <label for="blandsNest">Nest</label>
+                <span>5</span>
+            </fieldset>
+            <!-- 옆에 숫자는 아무리 생각해도 뭘 써야하는건지 모르겠따 -->
+        </form>
+        <form>
+            <fieldset>
+                <legend>CONDITION<a href="#condition">SEE ALL</a></legend>
+                <input type="checkbox" name="conditionGroup" id="conditionNew" checked>
+                <label for="conditionNew">New</label>
+                <input type="checkbox" name="conditionGroup" id="conditionManufac">
+                <label for="conditionManufac">Manufacturer Refurbished</label>
+                <input type="checkbox" name="conditionGroup" id="conditionSeller" checked>
+                <label for="conditionSeller">Seller Refurbished</label>
+                <input type="checkbox" name="conditionGroup" id="conditionUsed">
+                <label for="conditionUsed">Used</label>
+                <input type="checkbox" name="conditionGroup" id="conditionForParts">
+                <label for="conditionForParts">For Parts or not Working</label>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>DELIVERY OPTIONS</legend>
+                <input type="radio" name="deliveryGroup" id="deliveryFree" checked>
+                <label for="deliveryFree">FREE</label>
+                <input type="radio" name="deliveryGroup" id="deliveryPaid">
+                <label for="deliveryPaid">$4.99</label>
+            </fieldset>
+        </form>
+    </aside>
+    <div id="hiTech">
+        <ul id="hiTechPage3">
+            <li>
+                <img src="images/sample_product_01.png" alt="Apple TV 32GB">
+                <h3>Apple TV 32GB</h3>
+                <p>BLACK</p>
+                <p>$49.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_02.png" alt="Pebble Time">
+                <h3>Pebble Time</h3>
+                <p>RED</p>
+                <p>$29.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_03.png" alt="Zendure 4-Port USB">
+                <h3>Zendure 4-Port USB</h3>
+                <p>WHITE</p>
+                <p>$49.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_04.png" alt="Withings Smart Body Analyzer ws-50">
+                <h3>Withings Smart Body Analyzer ws-50</h3>
+                <p>BLACK</p>
+                <p>$39.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_05.png" alt="Withings Smart Body Analyzer ws-50">
+                <h3>Withings Smart Body Analyzer ws-50</h3>
+                <p>BLACK</p>
+            </li>
+            <li>
+                <img src="images/sample_product_06.png" alt="Ollo Clip New">
+                <h3>Ollo Clip New</h3>
+                <p>SILVER</p>
+                <p>$19.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_07.png" alt="Fitbit Charge HR Heart Rate and Activity Tracker">
+                <h3>Fitbit Charge HR Heart Rate and Activity Tracker</h3>
+                <p>BLACK</p>
+                <p>$19.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_08.png" alt="Apple Watch Sport 38mm Silver Aluminum Case">
+                <h3>Apple Watch Sport 38mm Silver Aluminum Case</h3>
+                <p>WHITE</p>
+                <p>$49.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_09.png" alt="Bose SoundLink On-Ear Headphones">
+                <h3>Bose SoundLink On-Ear Headphones</h3>
+                <p>WHITE</p>
+                <p>$119.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_10.png" alt="Sonos Play-1 Wireless HiFi System">
+                <h3>Sonos Play-1 Wireless HiFi System</h3>
+                <p>BLACK</p>
+                <p>$99.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_11.png" alt="Nest Learning Thermostat, 3rd Generation">
+                <h3>Nest Learning Thermostat, 3rd Generation</h3>
+                <p>$49.99</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="#">&lt;</a>
+        <a href="#hiTechPage1">1</a>
+        <a href="#hiTechPage2">2</a>
+        <a href="#hiTechPage3">3</a>
+        <a href="#hiTechPage4" class="active">4</a>
+        <a href="#hiTechPage5">5</a>
+        <a href="#hiTechPage6">6</a>
+        <a href="#hiTechPage7">7</a>
+        <a href="#hiTechPage8">8</a>
+        <a href="#">&gt;</a>
+    </div>
+    <!-- 페이지네이션 진짜 전혀 모르겠음 이게 맞나 -->
+    <div id="bestSellers">
+        <h2>BEST SELLERS</h2>
+        <ul>
+            <li>
+                <img src="images/sample_product_12.png" alt="Beanie">
+                <h3>Beanie</h3>
+                <p>GREEN</p>
+                <p><del>£39.99</del>£29.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_13.png" alt="T-Shirt With a Print">
+                <h3>T-Shirt With a Print</h3>
+                <p>DARK BLUE</p>
+                <p><del>£29.99</del>£19.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_14.png" alt="Pile-Lined Hooded Jacket">
+                <h3>Pile-Lined Hooded Jacket</h3>
+                <p>DARK BLUE</p>
+                <p><del>£49.99</del>£39.99</p>
+            </li>
+            <li>
+                <img src="images/sample_product_15.png" alt="Trainers">
+                <h3>Trainers</h3>
+                <p>SPACE GREY</p>
+                <p><del>£39.99</del>£29.99</p>
+            </li>
+        </ul>
+    </div>
+    <section id="customersSays" class="customersSaysArea">
+        <h2>What Our Customers Have to Say</h2>
+        <em>Couple of Words About This Stories Section</em>
+        <ul>
+            <li>
+                <img src="images/sample_face.png" alt="sample_face">
+                <p>Celia Fields</p>
+                <em>UX Expert</em>
+                <blockquote>
+                    This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+                </blockquote>
+            </li>
+            <li>
+                <img src="images/sample_face.png" alt="sample_face">
+                <p>Alexander Lee</p>
+                <em>Founder</em>
+                <blockquote>
+                    Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
+                </blockquote>
+            </li>
+            <li>
+                <img src="images/sample_face.png" alt="sample_face">
+                <p>Lenora Sandoval</p>
+                <em>Product Manager</em>
+                <blockquote>
+                    This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!'  she said.
+                </blockquote>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        
+    </footer>
+
 </body>
 </html>
