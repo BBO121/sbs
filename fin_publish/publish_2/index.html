@@ -32,8 +32,456 @@
             <!-- 카트랑 숫자는 따로 묶어야함 숫자는 움직이고 카트는 안움직이니까 -->
         </div>
     </header>
+
     <!-- header FIn -->
 
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Top Sales</a></li>
+                <li><a href="#">Brand Focus</a></li>
+                <li><a href="#" class="active">Hi-tech</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <input type="search" placeholder="I’m looking for ..." title="insert ur search keyword's">
+        </div>
+    </nav>
+    <!-- slider Nav Fin -->
+
+    <section>
+        <h2>slider Sector</h2>
+        <div>
+            <a href="">&lt;</a>
+            <a href="">&gt;</a>
+            <ol>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+            </ol>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/sample_slide.png" alt="productExample">
+                        <figcaption>
+                            <dl>
+                                <dt>iPhone 6 32Gb <br>Black</dt>
+                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                            </dl>
+                            <input type="button" value="Buy Now">
+                            <!-- 
+                            <h3></h3>
+                            <p></p>
+                            <a href=""></a>
+                            이것도 가능 -->
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- slider FIn - section 을 사용할 필요는 굳이 없었따.. -->
+    
+    <div>
+        <form>
+            <!-- form은 있어도 없는 태그. 스타일(css)입력을 하면 안됨.
+             form은 data장바구인인데 css가 삽입되면 data와 css가 같이 전송되어버림 -->
+            <fieldset>
+                <label for="sb_Select">Sort By:</label>
+                <span class="selectBox">
+                    <select id="sb_Select">
+                        <option>Best Match</option>
+                    </select>
+                </span>
+                <!-- span을 쓰는 이유 : select는 뭔짓을 해도 모양을 못바꿔서 스팬으로 묶어서 바꾸려고 -->
+
+                <label for="sb_keywords">KEYWORDS</label>
+                <input type="search" id="sb_keywords" placeholder="ex> tablet">
+                
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
+                <span>-</span>
+                <input type="text" id="range_maxprice">
+                <input type="checkbox" id="freeShipCheck">
+                <label for="freeShipCheck">Free Shipping</label>
+                
+                <label for="ship_Select">Ship to:</label>
+                <span class="selectBox">
+                    <select id="ship_Select">
+                        <option>United Arab Emirates</option>
+                        <!-- 일단 최대한 긴걸로 넣어보기. 최대 글자수 테스트 환경을 만들어야하니까 -->
+                    </select>
+                </span>
+            </fieldset>
+
+        </form>
+    </div>
+
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Top Sales</a>
+                    <!-- <b>Top Sales</b> -->
+                    <!-- 1depth menu에서 이동(a) 절대 안됨 > 태블릿, 모바일에서는 mouseCursorOver 이벤트가 touch로 변환되기 떄문에 하위 메뉴를 열수없게됨. -->
+                    <ol>
+                        <li><a href="#">Cell Phones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Tv, Audio</a></li>
+                        <li><a href="#">Video Games</a></li>
+                    </ol>
+                </li>
+                <!-- ol이 열리는 이벤트는 ul 전체로 봐야함 -->
+                <li>
+                    <a href="">Brand Focus</a>
+                    <ol>
+                        <li><a href="#">Cell Phones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Tv, Audio</a></li>
+                        <li><a href="#">Video Games</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">Hi-Tech</a>
+                    <ol>
+                        <li><a href="#">Cell Phones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Tv, Audio</a></li>
+                        <li><a href="#">Video Games</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">Home</a>
+                    <ol>
+                        <li><a href="#">Cell Phones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Tv, Audio</a></li>
+                        <li><a href="#">Video Games</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">Sale</a>
+                    <ol>
+                        <li><a href="#">Cell Phones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Computers</a></li>
+                        <li><a href="#">Tv, Audio</a></li>
+                        <li><a href="#">Video Games</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+
+        <form>
+            <fieldset>
+                <legend>Available</legend>
+                <!-- 
+                추천하는 방식은 list tag 로 분할하기
+                <ul>
+                    <li><label for=""></label><input type="radio" name="" id=""></li>
+                    <li><label for=""></label><input type="radio" name="" id=""></li>
+                </ul>
+                -->
+                <input type="radio" name="ava_select" id="ava_str" checked>
+                <label for="ava_str">In Storage</label>
+                <span>45</span>
+                <input type="radio" name="ava_select" id="ava_net">
+                <label for="ava_net">In Online-Shop</label>
+                <span>12</span>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    brands
+                    <a href="#">ALL</a>
+                </legend>
+                <input type="checkbox" id="brand_op_1" checked>
+                <label for="brand_op_1">Apple</label>
+                <span>32</span>
+                <input type="checkbox" id="brand_op_2">
+                <label for="brand_op_2">JBL</label>
+                <span>14</span>
+                <input type="checkbox" id="brand_op_3">
+                <label for="brand_op_3">Bose</label>
+                <span>3</span>
+                <input type="checkbox" id="brand_op_4">
+                <label for="brand_op_4">Nest</label>
+                <span>5</span>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Condition
+                    <a href="#">SEE ALL</a>
+                    <input type="checkbox" id="condition_op_1" checked>
+                    <label for="condition_op_1">New</label>
+                    <input type="checkbox" id="condition_op_2">
+                    <label for="condition_op_2">Manufacturer Refurbished</label>
+                    <input type="checkbox" id="condition_op_3">
+                    <label for="condition_op_3">Seller Refurbished</label>
+                    <input type="checkbox" id="condition_op_4" checked>
+                    <label for="condition_op_4">Used</label>
+                    <input type="checkbox" id="condition_op_5">
+                    <label for="condition_op_5">For Parts or not Working</label>
+                </legend>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <input type="radio" name="dlvr_select" id="dlvr_free" checked>
+                <label for="dlvr_free">Free</label>
+                <input type="radio" name="dlvr_select" id="dlvr_dollar">
+                <label for="dlvr_dollar">$4.99</label>
+            </fieldset>
+        </form>
+    </aside>
+
+
+    
+    <section>
+    <h3>Product List</h3>
+    <!-- 절대 하지 말아야하는것 > 얘 제목없는데 섹션쓰면 억지로 제목을 끼어넣어야함...-->
+
+    <ul>
+        <li>
+            <figure>
+                <img src="images/sample_product_01.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Apple TV 32GB</dt>
+                        <dd>BLACK</dd>
+                        <dd>$49.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_02.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Pebble Time</dt>
+                        <dd>RED</dd>
+                        <dd>$29.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_03.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Zendure 4-Port USB</dt>
+                        <dd>WHITE</dd>
+                        <dd>$49.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_04.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Withings Smart Body Analyzer ws-50</dt>
+                        <dd>BLACK</dd>
+                        <dd>$39.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_05.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Withings Smart Body Analyzer ws-50</dt>
+                        <dd>BLACK</dd>
+                        <dd></dd>
+                    </dl>
+                    <span>
+                        <a href="#">16 GB</a>
+                        <a href="#">BUY NOW</a>
+                    </span>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_06.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Ollo Clip New</dt>
+                        <dd>SILVER</dd>
+                        <dd>$19.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_07.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Fitbit Charge HR Heart Rate and Activity Tracker</dt>
+                        <dd>BLACK</dd>
+                        <dd>$19.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_08.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Apple Watch Sport 38mm Silver Aluminum Case</dt>
+                        <dd>WHITE</dd>
+                        <dd>$49.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_09.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Bose SoundLink On-Ear Headphones</dt>
+                        <dd>WHITE</dd>
+                        <dd>$119.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_10.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Sonos Play-1 Wireless HiFi System</dt>
+                        <dd>BLACK</dd>
+                        <dd>$99.99</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="images/sample_product_11.png" alt="productExample">
+                <figcaption>
+                    <dl>
+                        <dt>Nest Learning Thermostat, 3rd Generation</dt>
+                        <dd></dd>
+                        <dd>$49.99</dd>
+                    </dl>
+                    <!-- 데이터가 없다고 구조를 지워버리는것이 아니라 그냥 비워두면 된다 (태그는 유지) -->
+                </figcaption>
+            </figure>
+        </li>
+        <!-- 질문 : 보통 이런 리스트는 상품 누르면 상세페이지로 이동하는데 그건 구현을 안해두나?? 시안에 없어서? -->
+    </ul>
+    </section>
+
+    <div class="paging">
+        <a href="">&lt;</a>
+        <a href="">&gt;</a>
+        <!-- 눈이 안보이는 사람들을 위해 (접근성) 죄우 컨트롤러는 위에 먼저 넣어야함 -->
+            <ol>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+            </ol>
+    </div>
+    <!-- pager Fin 사용자 임의 확정 구조!!! 페이저는 대부분 이 구조임 -->
+
+    <!-- contentArea Fin -->
+
+    <section>
+        <h2>Best Sellers</h2>
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/sample_product_12.png" alt="productExample">
+                    <figcaption>
+                        <dl>
+                            <dt>Beanie</dt>
+                            <dd>Green</dd>
+                            <dd><del>£39.99</del>£29.99</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/sample_product_13.png" alt="productExample">
+                    <figcaption>
+                        <dl>
+                            <dt>T-Shirt With a Print</dt>
+                            <dd>Dark Blue</dd>
+                            <dd><del>£29.99</del>£19.99</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/sample_product_14.png" alt="productExample">
+                    <figcaption>
+                        <dl>
+                            <dt>Pile-Lined Hooded Jacket</dt>
+                            <dd>Dark Blue</dd>
+                            <dd><del>£49.99</del>£39.99</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/sample_product_15.png" alt="productExample">
+                    <figcaption>
+                        <dl>
+                            <dt>Trainers</dt>
+                            <dd>Space Grey</dd>
+                            <dd><del>£39.99</del>£29.99</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <!-- best seller Fin -->
+
+
+
+<!-- 나의 꼬질꼬질한 과제
+    <nav>
+        <ul>
+            <li><a href="#topSales">Top Sales</a></li>
+            <li><a href="#brandFocus">Brand Focus</a></li>
+            <li class="active"><a href="#hiTech">Hi-tech</a></li>
+            <li><a href="#bestSellers">Best Sellers</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+    <div>
+        <label for="mui" class="material-icons">search</label>
+        <input type="search" placeholder="I’m looking for ..." title="Search the site">
+    </div> 
+    위에가 고친거 
+
+  
     <div class="categoryArea">
         <nav>
             <ul>
@@ -42,15 +490,15 @@
                 <li class="active"><a href="#hiTech">Hi-tech</a></li>
                 <li><a href="#bestSellers">Best Sellers</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#support">Support</a></li>
             </ul>
         </nav>
         <div>
-            <a href="#">Support</a>
             <label for="mui" class="material-icons">search</label>
             <input type="search" placeholder="I’m looking for ..." title="Search the site">
         </div>
     </div>
-    <!-- 일단... 폰트 이런거 다 같으니까 class 지정해놔야할거같은데.. h없으니까 div 로 묶기 -->
+
 
     <section id="slide" class="slideArea">
         <div class="slide1Area" id="slide1">
@@ -58,7 +506,7 @@
             <p>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</p>
             <a href="#">BUY NOW</a>
         </div>
-        <!-- 앞으로 슬라이드 2 3 4 등을 넣을거니까 여기를 div 묶는게 맞지 않을까???? -->
+        앞으로 슬라이드 2 3 4 등을 넣을거니까 여기를 div 묶는게 맞지 않을까????
 
         <div>
             <a href="#" hidden>&lt;</a>
@@ -69,15 +517,16 @@
                 <li><a href="#"></a></li>
             </ul>
             <a href="#">&gt;</a>
-        </div>
-        <!-- 그럼 얘는 유기적으로 작동을 해야하니까..? (인디케이터랑 컨트롤러가 같이 움직이니까 같이 div로 묶기?) -->
+        </div> 
+        그럼 얘는 유기적으로 작동을 해야하니까..? (인디케이터랑 컨트롤러가 같이 움직이니까 같이 div로 묶기?)
+   
     </section>
-    <!-- 배경을 깔아야하니까 배경을 깔 공간이 필요함. 그래서 마침 h2도 써야하니까 section 으로 넣기. -->
+    배경을 깔아야하니까 배경을 깔 공간이 필요함. 그래서 마침 h2도 써야하니까 section 으로 넣기.
 
     <form>
         <fieldset>
             <legend hidden>sort</legend>
-            <!-- 어쩌다보니 발견한 hidden.. 안배운건데.. 물어보기.... -->
+           어쩌다보니 발견한 hidden.. 안배운건데.. 물어보기.... 
             <label for="sort">Sort By:</label>
             <select id="sort">
                 <option>Best Match</option>
@@ -85,13 +534,13 @@
             </select>
             <label for="Keywords">Keywords</label>
             <input type="search" id="Keywords" placeholder="Tablet">
-            <!--
+           
             <label for="priceSetMin">Price</label>
             <input type="number" id="priceSetMin" placeholder="10">
             <label for="priceSetMax">-</label>
             <input type="number" id="priceSetMax" placeholder="1000">
             근데 number 는 무조건 수량에만 쓰라고 했었다!!!!!!!!!!! 
-            -->
+          
             <label for="priceSetMin">Price</label>
             <input type="text" id="priceSetMin" placeholder="10">
             <span>-</span>
@@ -107,6 +556,7 @@
             </select>
         </fieldset>
     </form>
+ 여기까지 과제 밑에는 그냥 혼자 하는김에 해보기
     <aside id="sideBar" class="sideArea">
         <nav>
             <ul>
@@ -138,7 +588,7 @@
                     <label for="mui" class="material-icons">chevron_right</label>
                 </li>
             </ul>
-            <!-- ??? 이게 맞나..? 내가 이해한거론.. 글로벌영역에 옆에 오는 메뉴 aside로 묶기 / 메뉴니까 nav 에 list (2중첩) 근데 안에 리스트는 또 폰트가 다르니까 따로 class 설정 -->
+            ??? 이게 맞나..? 내가 이해한거론.. 글로벌영역에 옆에 오는 메뉴 aside로 묶기 / 메뉴니까 nav 에 list (2중첩) 근데 안에 리스트는 또 폰트가 다르니까 따로 class 설정
         </nav>
 
         <form>
@@ -166,7 +616,7 @@
                 <label for="blandsNest">Nest</label>
                 <span>5</span>
             </fieldset>
-            <!-- 옆에 숫자는 아무리 생각해도 뭘 써야하는건지 모르겠따 -->
+           옆에 숫자는 아무리 생각해도 뭘 써야하는건지 모르겠따 
         </form>
         <form>
             <fieldset>
@@ -194,7 +644,7 @@
         </form>
     </aside>
     <div id="hiTech">
-        <ul id="hiTechPage3">
+        <ul id="hiTechPage4">
             <li>
                 <img src="images/sample_product_01.png" alt="Apple TV 32GB">
                 <h3>Apple TV 32GB</h3>
@@ -273,7 +723,7 @@
         <a href="#hiTechPage8">8</a>
         <a href="#">&gt;</a>
     </div>
-    <!-- 페이지네이션 진짜 전혀 모르겠음 이게 맞나 -->
+ 페이지네이션 진짜 전혀 모르겠음 이게 맞나
     <div id="bestSellers">
         <h2>BEST SELLERS</h2>
         <ul>
@@ -332,9 +782,38 @@
                 </blockquote>
             </li>
         </ul>
-    </section>
+    </section> -->
+
+
+    <!-- 선생님이랑 같이 진행 -->
     <footer>
-        
+        <div>
+            <h2>
+                <img src="images/logo_footer.png" alt="good bye, portland">
+            </h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <span>
+                <a href="#">X</a>
+                <a href="#">facebook</a>
+                <a href="#">google</a>
+            </span>
+        </div>
+        <!-- hr을 써도 되지만 굳이 써도 되지 않아도 된다. 선을 긋는 기능은 css에도 있다! -->
+        <div>
+            <p>
+                She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.
+            </p>
+            <span>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+            </span>
+        </div>
     </footer>
 
 </body>
