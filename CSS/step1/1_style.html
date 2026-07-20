@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - 작성방식</title>
+    <link rel="stylesheet" href="css/1_style.css">
+    <!-- outer-style : 우선권 자체가 차상위기 때문에 언어를 잘 이해하는 위치의 사람이 사용한다. 하나의 파일안에 모든 css를 작성할 수 있기 떄문에 "중앙통제"방식이 가능하다 -->
+    <!--
+    얘를 아래로 (스타일아래)로 내리면 얘로 작동함. 일단 밑에있는걸로 구동된다고 이해하면됨
+    -->
+    <style>
+        p{
+            color:green;
+        }
+    </style>
+    <!-- inner-style : 우선권 자체가 차상위기 떄문에, 페이지 단위를 테스트하거나 한개의 페이지로 구성된(onePageWeb)경우에만 사용하는 방식 -->
+</head>
+<body>
+    <p style="">
+        <!--
+        <p style="color:red;">
+        inline style : 우선권 자체가 가장 높은 방식이기 떄문에, 테스트를 해보거나 유지보수 단계에서 css를 모르는 인원이 임시로 작성해두거나, script를 통해 들어오는 css들에 사용되는 방식
+        -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia incidunt quo dolores aliquam aspernatur, corporis, ex architecto reprehenderit necessitatibus facilis libero vero culpa possimus sunt ad ipsa voluptas maiores dolore numquam, rem quis ratione odit magni illo? Unde magni dolores, alias doloremque totam sed nulla illo corrupti vitae non, fugiat praesentium velit recusandae. Quos similique magni sequi dolor obcaecati accusantium tempora ad maiores! Earum delectus ad exercitationem fugit voluptatibus, quod illum unde? Reprehenderit molestiae fugiat, voluptates cumque ipsa adipisci architecto?
+    </p>
+</body>
+</html>

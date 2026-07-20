@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body{
+    font-family: "Nanum Gothic"
+}
+
+/* 
+폰트 적용한 후에 f12 눌러서 compuse 맨 아래에 
+Rendered Fonts
+Family name: NanumGothic
+PostScript name: NanumGothic
+Font origin: Network resource(84 glyphs)
+
+이부분 확인하기!
+패밀리네임 폰트로 바꼈는지 확인하고
+네트워크 리소스로 바꼈는지 확인하기!!
+로컬어쩌구면 큰일남 내컴에 있는거 가지고온거임
+*/
+
+h1{
+    font-weight: 400;
+}
+h2{
+    font-weight: 700;
+}
+h3{
+    font-weight: 800;
+}
+
+/* 
+thin - 100
+extraLight - 200
+light - 300
+regular - 400
+medium - 500
+semibold - 600
+bold - 700
+extraBold - 800
+black - 900
+> 위 표기 방식이 일반적이기 하나 글꼴마다 상이할 수 있음.
+
+
+web폰트 불러오는 순서
+영어권인지 비영어권인지에 따라 다름
+
+- 영어권 : 1번,2번 글꼴 상황이때 대체 개념으로 작동 (1번이 없을때 2번)
+- 비영어권 : 1번에 알파벳이 없을시 2번 글꼴로 영문 변경 (대부분 비 영어권 font는 알파벳 기봄포함)
+- 비영어권2 : 얖,뒤 글꼴 모두 비영어권 글꼴일 경우 영어권과 동일하게 대체 개념으로 작동
+ex> 영문 글꼴을 따로 쓰고 싶을 경우 1번에 영문폰트, 2번에 한글 폰트로 불러오면 됨. 
+*/

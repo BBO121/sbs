@@ -1,0 +1,35 @@
+.classEx1{
+    color: red;
+}
+
+.btn{
+    padding: 10px 30px; border: 1px solid black; font-size: 12px;
+    display: inline-block; text-decoration: none; color: inherit;
+}
+
+.btn.create{
+    background-color: white; color: black; border: none;
+}
+
+.btn.modify{
+    background-color: darkcyan; color: cyan; border-color: forestgreen;
+}
+
+.btn.cancel{
+    background-color: palevioletred; color: wheat; border-color: pink;
+}
+input{
+    display: block;
+}
+.inputBox{
+    line-height: 21px; font-size: 12px; padding: 5px 15px;
+}
+#userName{
+    border: 1px solid green; color: green; 
+}
+#userPW{
+    border: 1px dotted #3b91dc; color: #3b91dc; 
+}
+#userID{
+    border: 1px dashed #ef4d65; color: #ef4d65; 
+}

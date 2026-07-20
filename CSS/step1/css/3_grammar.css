@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+h1{
+    font-size: 12px; color: #f03;
+}
+img{
+    width: 300px; border: 3px solid #3f3
+}
+/* 어차피 이미지는 종횡비를 따르기 떄문에 위스만 치면 하이트는 안쳐도 됨! 알아서 비율 잘 맞춰서 늘어남 */
+ul,ol{
+    font-weight: bold;
+}
+ul{
+    color: blue; font-size: 18px;
+}
+ol{
+    color: plum; font-size: 14px;
+}
+ul li{
+    /* color: blue; font-size: 18px; font-weight: bold; */
+}
+/* 부모에게 주면 알아서 자손이 알아먹게끔 만들어진 언어가 css임
+ul{} ul li {} 둘다 결과는 같지만 ul{} 이렇게 부모에게 한번에 주는게 훨씬 효율적이고 좋음!!!! */
+/* 쉽게 말하면 확정구조인거는 걍 부모만 쓰면 되는거쥐 */
+
+/* 
+    ul li >> 모든 li에 각자 부여
+    ul >> ul,ol에 한번만 부여하여 자손들이 Casacade하게 만들기
+ */
+
+dl dt,dl dd{
+    font-size: 35px;
+    /* 
+        dt 와 dd에 모두 따로 35px 글자크기를 부여한다.
+        이렇게 되면 dt열번 dd열번 총 20번의 동일 코드가 작동하게됨...................
+        이에 지정하면 단 한번의 적용으로 끝남!!!
+    */
+}
+
+dl{
+    font-size: 35px;
+    /* 이렇게 써주는게 깔끔쓰 */
+}
+
+
+/* To Do */
+
+div ul figure img{
+    width: 50px;
+}
+div ul li figure figcaption dl dt{
+    color: skyblue;
+}
+div ul li figure figcaption dl dd{
+    color: red; font-size: 50px;
+}
+
+/* 
+div dt{
+    color: skyblue;
+}
+div dd{
+    color: red; font-size: 50px;
+} */
