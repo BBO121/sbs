@@ -1,0 +1,24 @@
+html,body,.wrap{
+    height: 100%;
+}
+/* 스크롤없이 기본색상을 바꾸는것 */
+/* html,body가 색상을 설정한 wrap 위의 부모들 다 높이를 설정해줘야함 */
+body,p{
+    margin: 0;
+    /* 조금 띄어져있는거(기본적으로 가지고 태어나는 마진) 를 없앨떄 */
+}
+.wrap{
+    background-color: skyblue;
+    /* px 로 넣는건 꽉 채운다는 개념이 불가능함 한계가 있음.... */
+    /* backgraound : skyblue 이렇게도 되는데 이렇게하면 안됨 컬러 할거면 컬러까지 쓰자! 안그러면 브라우저가 백그라운드의 새끼속성을 다 계산하고  */
+}
+.wrap .topLine input{
+    padding: 15px; background-color: rgba(255,255,255,0);
+}
+/* transparaent : 투명 > 색을 아예 뺴버리는 개념 */
+/* background-color: rgba(255,255,255,0); : 그라데이션
+transparaent 이거로는 그라데이션이 안됨 아예 색을 빼버리는거니까!!! */
+
+p{
+    padding: 15px; background-color: rgb(255, 189, 194);
+}
