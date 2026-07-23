@@ -3,11 +3,19 @@ html,body{
 }
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'),url('../images/BackgroundBack.png');
     background-repeat: no-repeat;
-    background-size: 100%;
-}
+    /* !!!! -image : 배경이미지 설정 n개 이상 사용 가능 */
+    /* background-size: 50%; */
+    /* 밑에꺼 실험할떄이걸로.. */
+    background-size: contain;
+    /* 
+    이미지는 , 로 중첩 가능이고 둘다 같은 속성을 받음 다른 속성을 주고싶으면 , 로 따로따로 줘야함
+    콘테인은 자동이고 100퍼센트는 퍼센트...
+    */
+
 /* 
+!!!!
 background-size : 배경 이미지 크기 설정
 1. %,px 등의 다양한 단위 사용 가능
 2. 하나만 입력시 종횡비 가동 (img Tag 와 동일) / 두개 입력시 너비, 높이 따로 작동 (거의 쓰이지 않음)
@@ -15,3 +23,26 @@ background-size : 배경 이미지 크기 설정
     cover : 꽉 채움. (비율이고 뭐고 걍 꽉 채움)
     contain : 종횡비로 꽉 채움 (너비나 높이 중 먼저 한계선에 닿는 부분 기준으로 꽉 채움)
 */
+    /* background-position: right 10% center;
+    /이거 이해 다시 해야해... */
+
+    background-position: center;
+    /* !!!!
+    position : x,y축으로 구분하는데 하나만 적는 경우 x,y 둘다 적용
+    x preset : left center ringht
+    y preset : tio center bottom
+    ㅣleft,top 기준으로 설게되어있기 떄문에 right,bottom 기준으로 좌표를 입력하기 이해서는 방향명시 이후 수치를 적으면 된다 ex> right 10% bottom 10%
+     */
+    /* 탑바텀레프트라이트 전부 합쳐서 쓰는거 */
+    background-attachment: fixed,scroll;
+    /* 
+    !!!! -attachment : 스크롤에 반응하는 방식 xcroll(default), fixed(고정)
+    */
+    /* 한놈은 고정 한놈은 스크롤(뚜껑날라감ㅋㅋ) */
+/* 
+right 의미없어도 일단 써야함
+*/
+p{
+    font-size: 50px; height: 3000px;
+}
+}

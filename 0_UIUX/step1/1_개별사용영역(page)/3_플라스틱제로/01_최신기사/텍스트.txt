@@ -93,7 +93,7 @@ In addition to our own efforts, the government must step forward to create a soc
 
     [비 순차 목록 - 03]
     - Establishing robust and effective reduction targets that encompass the entire process of plastic production, use, and disposal
-    Introduction of a reuse and refill system instead of recycling
+    - Introduction of a reuse and refill system instead of recycling
     - Phased ban on single-use plastics
     - Imposing environmental and social cost liability on companies that overproduce plastic
     - Strengthening transparency regarding plastic production, use, import, and export
