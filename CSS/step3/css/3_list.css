@@ -1,0 +1,57 @@
+ul li.circle{
+    list-style: circle;
+}
+ul li.disc{
+    list-style: disc;
+}
+ul li .square{
+    list-style: square;
+}
+
+ol li.decimal{
+    list-style: decimal;
+}
+
+/* dicimal : 10진수 라는 뜻 */
+
+
+ol li.lower-alpha{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+}
+/* 보통 약관, 보통 조항 이런거에 무조건 들어감 */
+ol li.none{
+    list-style: none;
+}
+
+ul.custom{
+    /* list-style-image: url('../images/bul_li.gif');
+    list-style-position: inside; */
+    padding: 0 0 0 10px;
+}
+/* 
+list-style-position 은 인사이드 아웃사이드 둘밖에 없음
+*/
+/* 
+그리고 보통 list-style :none 은 ul 에 넣어야함 그러니까
+
+1. ul > list-style :none; list-style-lmage: url('') 으로 쓰거나
+2. ul li > list-style : none; + background: url('') 이렇게 쓰거나.
+*/
+
+ul.custom li{
+    list-style: none;
+    background: url('../images/bul_li.gif') left center no-repeat;
+    padding: 0 0 0 20px;
+}
+/* 
+아예 그냥 불릿에 백그라운드로 넣어버리는 방법
+*/

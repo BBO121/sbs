@@ -1,0 +1,116 @@
+*{
+    margin: 0; padding: 0;
+}
+a{
+    text-decoration: none; font-size: 50px; word-spacing: 15px; display: inline-block; border: 1px solid green; margin-left: 30px; padding: 10px;
+}
+
+a:link{
+    color: red;
+}
+
+/* 
+태그에 href 에 있어야 link 가 작동을 함 (그리고 a 만 href 를 가지고있음)
+**** 자바스크립트에서는 걍 때려박을수있음(...)(비쭈쩐...)
+*/
+
+a:visited{
+    color: green;
+}
+
+/* 
+방문한적있는. 한번 눌러본 건 색깔이 바뀌는 로직 (a에도 기본적으로 들어가있음)
+*/
+
+a:focus{
+    border:5px dotted blue;
+}
+
+/* 
+클릭이 일어난 다음 초첨이 맞춰진 상태! 탭을 누르면 넘어가고 쉬프트 탭을 누르면 뒤로가고
+절대 클릭 대용으로 쓰면 안됨
+*/
+
+a:hover{
+    background-color: black; color: white;
+}
+
+/* 
+제일 중요!!
+이 부분만큼은 자바스크립트한테 의존할 필요가 없다 css 가 훨 씬 편함!!
+*/
+
+a:active{
+    background-color: red; color: blue;
+}
+
+/* 
+클릭을 유지하면 보이는 이벤트 > 조금 효용성은 떨어짐
+이걸 응용하면 이펙트를 만들수는 있음
+*/
+
+/* 
+css 이벤트는 진짜 별거없음 별명이 이벤트 거지 (ㅋㅋ)
+그래서 이거 다섯개는 무조건 다 암기하기
+*/
+ul{
+    margin-bottom: 30px;
+}
+
+ul li{
+    line-height: 50px; text-align: center;
+}
+
+
+    ul li:link{
+        color: red;
+    }
+
+    ul li:visited{
+        color: green;
+    }
+
+    ul li:focus{
+        border:5px dotted blue;
+    }
+
+    ul li:hover{
+        background-color: black; color: white;
+    }
+
+    ul li:active{
+        background-color: red; color: blue;
+    }
+
+    /* 
+    ul li 에서 가능한건 hover 와 active 만 가능함
+    */
+
+
+/* ol{
+    background-color: green;
+}
+
+ol li a{
+    display: block;
+}
+ol li span
+
+a{
+    text-decoration: none;
+} */
+
+ol{
+    background-color: rgb(113, 219, 113);
+}
+ol li:hover{
+    background-color: aqua;
+}
+
+ol li:hover p{
+    display: block;
+}
+
+ol li p{
+    background-color: green; color: white; display: none;
+}

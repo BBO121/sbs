@@ -1,0 +1,129 @@
+
+div{
+    width: 300px; height: 150px; margin-bottom: 30px;
+}
+.singleBox{
+    border: 3px solid #60f;
+    margin-top: 60px;
+}
+/* 
+테두리 숏핸드 
+숏핸드 조건 : 사방향을 전부 똑같이 적용하려고 할때만 쓸 수 있음.
+
+solid > 직선이냐 점선이냐 하는거 위치...
+*/
+
+.multiBox{
+    /* border-width: 1px 5px 10px 15px;
+    border-style: solid dotted dashed double;
+    border-color: #f06 #6f0; */
+    border-top: 1px solid red;
+    border-right: 3px dotted lawngreen;
+    border-bottom: 10px dashed blue;
+    border-left: 15px double rgb(232, 183, 91);
+}
+
+.searchField{
+    padding: 0 35px 0 65px;
+    display: block; width: 100%;
+    
+    
+    /*
+    내가한거
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-left: none; */
+
+    border-width:0 0 1px; outline: none;
+    line-height: 50px;
+    /* 하지만 아웃라인 논 은 별로 비추
+    색약색맹은 못봄 */
+    /* heigt 비추 앵간하면 line-height 를 쓰자!!!!!!!!!! */
+
+
+    /* 
+    내가한거
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'),url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 30px; 
+    background-position: left, right;
+    background-position:
+    */
+
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'),url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-position: 20px center, right 10px center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+
+/* 
+1. 속성 별 분리 방법 (주석걸어둔거)
+2. 방향 별 분리 방법
+
+이게 위에 숏핸드를 찢어서 둔거임!
+
+css방향은 정시계방향! 탑 라이트 바텀 레프트
+*/
+
+/* 
+solid : 직선
+dotted: 점선
+dashed : 파선
+double : 두줄 (위스(굵기)가 어느정도 있어야 두줄이 보임 안굵으면 두줄이 안보임)
+*/
+
+/* 
+4방향 모두 기입 - 모두 별도
+3뱡향만 기입 - xAixs 에서 right만 남기 때문에 left,right가 하나의 값으로 적용된다.
+2방향만 기입 - xAixs,yAixs에 남은 값이 각 1개씩 (top,right)남았기 떄문에 y축, x축 두개의 값으로 적용된다.
+1방향만 기입 - 위 예제(singleBox)와 상동)
+*/
+
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #666;
+}
+.outsetBox{
+    border: 20px outset #666;
+}
+.outsetBox:hover{
+    border-style: inset;
+}
+/* 이렇게 호버이벤트같은거 걸수잇음.. */
+/* 근데 이렇게 4개 세트인데 요즘 잘 안씀 사유:촌시러워... */
+
+
+.radiusBox{
+    background-color: darkslategray; color: yellowgreen;
+    border-radius: 10px 30px 50px 100px;
+}
+.circleBox{
+    background-color: #60f;
+    width: 500px; height: 500px;
+    border-radius: 250px;
+    line-height: 500px;
+    text-align: center; color: aqua;
+}
+
+/* 
+원을 만드는 절대 조건
+정사각형에 선분의 반을 깎으면 됨
+모든 방사각이 똑같기 때문에 같은 각으로 깎으면 원이 되미
+*/
+
+/* 
+
+width: 50vw; height: 50vw; border-radius: 25vw; font-size: 2vw; line-height: 50vw;
+
+
+그냥 적당히 알고있어도 됨~
+vw : 뷰포트위스 브라우저 보여주는 장치의 너비!
+해상도가 1920px 라고 쳤을때, 19.2px X 50 = 50vw 
+*/

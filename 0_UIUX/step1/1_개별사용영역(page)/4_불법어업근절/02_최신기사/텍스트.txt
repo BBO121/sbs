@@ -21,7 +21,7 @@ Is the ocean always healthy, and can we always catch an unlimited number of fish
     [문단 - 02]
     However, fishing activities that fail to observe even the minimum regulations necessary to sustain the marine ecosystem continue unabated. We refer to fishing activities that violate the rules as "illegal fishing." This illegal fishing takes the form of catching more fish than permitted without proper notification, catching prohibited fish, or even fishing without a permit and forging documents.
 
-    [문단 - 03]
+[부제]
     <b>The sea is gradually being destroyed and emptied by indiscriminate illegal fishing,</b>
 
     [문단 - 04]
@@ -51,7 +51,7 @@ It makes poor countries poorer, and also violates the human rights of sailors
     Human rights issues involving seafarers in the deep-sea fishing industry are also a major example of illegal fishing practices. Seafarers, who must live on board ships for months at a time in the vast ocean, often experience violence, beatings, racial discrimination, and wage exploitation.
 
     [문단 - 03]
-    <b>Join Greenpeace to stop illegal fishing, a problem in Korea as well!</b>
+<b>Join Greenpeace to stop illegal fishing, a problem in Korea as well!</b>
 
     [문단 - 04]
     Do you understand a little bit about the negative impact of illegal fishing? However, what is surprising is the fact that Korea, known as a major deep-sea fishing power, is bearing the stigma of being an illegal fishing nation. Due to illegal fishing carried out by a few deep-sea fishing companies, Korea was designated as an illegal fishing nation by the United States in January of last year and as a preliminary illegal fishing nation by the European Union in November.

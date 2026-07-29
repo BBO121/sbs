@@ -29,8 +29,8 @@ background-size : 배경 이미지 크기 설정
     background-position: center;
     /* !!!!
     position : x,y축으로 구분하는데 하나만 적는 경우 x,y 둘다 적용
-    x preset : left center ringht
-    y preset : tio center bottom
+    x preset : left center right
+    y preset : top center bottom
     ㅣleft,top 기준으로 설게되어있기 떄문에 right,bottom 기준으로 좌표를 입력하기 이해서는 방향명시 이후 수치를 적으면 된다 ex> right 10% bottom 10%
      */
     /* 탑바텀레프트라이트 전부 합쳐서 쓰는거 */
