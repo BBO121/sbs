@@ -1,0 +1,56 @@
+*{
+    margin: 0; padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: rgb(255, 255, 163);
+    width: 80%; margin: 0 auto;
+}
+
+/* 
+가운데로 보내는코드좀 외우자!!!!!!!
+margin: 0 auto
+*/
+
+main{
+    margin-bottom: 20px;
+}
+header{
+    background-color: rgb(0, 170, 255);
+}
+header nav{
+    background-color: greenyellow;
+}
+main aside{
+    background-color: orange;
+}
+main section{
+    background-color: rgb(55, 55, 195);
+}
+main section article{
+    background-color: aqua
+}
+footer{
+    background-color: rgb(196, 84, 172);
+}
+
+/* 
+부모종속 관계 전부 다 쓰기
+중간만 딱 짤라서 쓰지 말기
+*/
+
+aside{
+    width: 30%; float: left; height: 300px;
+}
+section{
+    width: 70%; float: left; height: 300px;
+}
+main:after{
+    content:''; display:block; clear:both;
+}
+
+/* 
+다 하면 중복코드 보고 줄이기
+*/

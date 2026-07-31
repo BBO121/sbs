@@ -8,7 +8,27 @@
 .wrap .exam_1{
     background-color: lightblue;
 }
+.wrap .exam_1:after{
+    content:''; display:block; clear:both;  
+}
+/* 
+    afterCanceler (이건 하나의 공식! 그냥 외워야함)
+    1. 적용대상 : float
+    :after - 후위선택자
+    :before - 선위선택자
+    부모가 망가지는 현상을 막기 위해 만든것.
+    적용대상의 부모에게 줘야함
 
+    clear : float 를 없애기 위에 태어난 애.. 
+    이 이하로는 부모들이 못 지나가 라는 뜻
+
+    쌤 주석
+
+    1. :after - 후위선택자
+    2. content - content 넣어주는 속성 (ex > 1 -> 1이 들어감 img -> img 가 들어감 ) = 빈 문자열 (emptyStrin)
+    3. display:block - width: 200%
+    4. clear - clear = floatCounter(취소). float : left,right = both(양쪽다)
+*/
 .wrap .exam_1 img{
     float: left;
     margin-right: 30px;
@@ -17,3 +37,17 @@
 .wrap .exam_1 p{
     font-size: 24px; line-height: 30px; background-color: rgb(99, 24, 99);
 }
+
+.wrap .exam_2{
+    background-color: lightseagreen;
+}
+.wrap .ewam_2:after{
+    content:''; display:block; clear:both;
+}
+.wrap .exam_2 div{
+    width: 33.33%; height: 300px; background-color: slateblue;
+    float:left
+}
+/* 
+2열이든 3열이든 무조건 플로트레프트 써야함
+*/
