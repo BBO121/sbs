@@ -31,37 +31,17 @@ body,p{
     background-color: #039; color: white;
     margin: 50px;
 }
-.secondDiv{
-    background-color: #ddd; 
-    margin: 50px;
-}
 
-
-body{
-    margin: 0; padding: 0; font-size: 25px;
-}
-
-.firstDiv{
-    background-color: #555;
-    margin: 30px;
-    /* margin: 10px 30px 30px;
-    padding: 0 50px 50px
-    box-sizing:border-box; */
-
-    /* border shortHand와 마찬가지로 방향별 처리 가능 */
-}
-.firstDiv p{
-    background-color: #039; color: white;
-    margin-top: 50px;
-}
 /*  자손의 margin으로 부모를 밀어내면 안됨 */
 /* margin : 형제관계에서만 간격을 벌리는 용도 */
 
 .secondDiv{
-    background-color: #ddd;
-    margin: 50px; 
-    /* >> 이거 개잘못됨 */
+    background-color: #ddd; 
+    margin: 50px;
 }
+  /* >> 이거 개잘못됨 */
+
+
 /* 
     margin 은 동일한 방향에서 만나게 되면 서로 상쇄됨.
     margin > top, right, bottom, lefr 사용가능 = 되도록이면 -left, -bottom만 사용
